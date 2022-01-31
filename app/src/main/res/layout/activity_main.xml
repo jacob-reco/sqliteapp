@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/enter_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Healthcare Professional Details:"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/healthcare_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_details"
+        android:hint="ID:"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/healthcare_id"
+        android:hint="First Name:"
+        android:inputType="textPersonName"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name"
+        android:hint="Last Name:"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/healthcare_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_name"
+        android:hint="Email:"
+        android:inputType="textEmailAddress"
+        android:textSize="24dp"/>
+
+
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/healthcare_email"
+        android:hint="Role:"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/role"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_insert"
+        android:layout_marginTop="30dp"
+        android:text="Update"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_update"
+        android:layout_marginTop="30dp"
+        android:text="Delete"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_delete"
+        android:layout_marginTop="30dp"
+        android:text="View Details"
+        android:textSize="24dp" />
+
+</RelativeLayout>
